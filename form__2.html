@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient( to right,cyan,purple);
+            
+        }
+        .container{
+            background: #ffffff;
+            font-family: Arial;
+            height: 300px;
+            width: 700px;
+            margin: 100px auto;
+        }
+        h2{
+            background: linear-gradient(to right,blue,purple,cyan,blue,purple);
+            color: transparent;
+            background-clip: text;
+            text-align: center;
+            padding-top: 22px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+        label{
+            display: block;
+            text-align: left;
+        }
+        .col input{
+            width: 300px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #ccc;
+        }
+        .message{
+            width: 620px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #ccc;
+
+
+
+
+        }
+        button{
+            padding: 6px 40px;
+            border: none;
+            background: linear-gradient(to right,cyan,purple);
+            color: #ffffff;
+            margin-left: 40px;
+            margin-top: 22px;
+        }
+        button:hover{
+            border: 2px solid red;
+            background: hotpink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Responsive Contact us Form</h2>
+        <div class="row">
+            <div class="col">
+                <label for="">First Name</label>
+                <input type="text">
+            </div>
+            <div class="col">
+                <label for="">Last Name</label>
+                <input type="text">
+            </div>
+            <div class="col">
+                <label for="">Email Address</label>
+                <input type="text">
+            </div>
+            <div class="col">
+                <label for="">Website Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Write Your massage</label>
+                <input class="message" type="text">
+            </div>
+             
+        </div>
+        <button>SUBMIT</button>
+
+    </div>
+    
+</body>
+</html>
