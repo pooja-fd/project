@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #2e2252;
+        }
+        .container{
+            color: #ffffff;
+            font-family: Arial;
+            text-align: center;
+            padding: 100px;
+
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            font-size: 16px ;
+            color: #ccc;
+        }
+
+        .col{
+            width: 280px;
+            background: #000080;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .overlay1{
+            background: linear-gradient(to right,rgba(218, 69, 143, 0.80),rgba(255,99,140,.80)),url(https://images.pexels.com/photos/40142/new-york-skyline-manhattan-hudson-40142.jpeg?auto=compress&cs=tinysrgb&w=600);
+            height: 200px;
+            background-size: contain;
+            clip-path: polygon(0% 0%,100% 0,100% 90%,0% 100%);
+        }
+        .overlay2{
+            background: linear-gradient(to right,rgba(45, 141, 141,0.22),rgba(68, 148, 148,0.80)),url(https://images.pexels.com/photos/40142/new-york-skyline-manhattan-hudson-40142.jpeg?auto=compress&cs=tinysrgb&w=600);
+            height: 200px;
+            background-size: contain;
+            clip-path: polygon(0% 0%,100% 0,100% 90%,0% 100%);
+        }
+        .overlay3{
+            background: linear-gradient(to right,rgb(163, 46, 46,0.80),rgb(146, 112, 49,0.80)),url(https://images.pexels.com/photos/40142/new-york-skyline-manhattan-hudson-40142.jpeg?auto=compress&cs=tinysrgb&w=600);
+            height: 200px;
+            background-size: contain;
+            clip-path: polygon(0% 0%,100% 0,100% 90%,0% 100%);
+        }
+       
+
+        h2 {
+            margin: 6px;
+        }
+
+        img {
+            background-color: rgba(197, 89, 89, 0.6);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+        }
+        .col:hover{
+            transition: 2s;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>RESPONSIVE CARDS</h1>
+        <div class="row">
+            <div class="col">
+                <div class="overlay1">
+                </div>
+                <h2>las vegas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, natus. Incidunt porro, magnam possimus
+                    dignissimos commodi excepturi eius totam nostrum. , non corrupti esse dolorem mollitia? Dicta, eum?
+                </p>
+            </div>
+            <div class="col">
+                <div class="overlay2"></div>
+                <h2>new york</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, natus. Incidunt porro, magnam possimus
+                    dignissimos commodi excepturi eius totam nostrum. , non corrupti esse dolorem mollitia? Dicta, eum?
+                </p>
+            </div>
+            <div class="col">
+                <div class="overlay3"></div>
+                <h2>singapore</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, natus. Incidunt porro, magnam possimus
+                    dignissimos commodi excepturi eius totam nostrum. , non corrupti esse dolorem mollitia? Dicta, eum?
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
