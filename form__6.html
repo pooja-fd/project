@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to top, purple, blue);
+            height: 100vh;
+        }
+
+        .main {
+            margin: auto;
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            /* margin: 10px 0px; */
+        }
+
+        .xyz {
+            text-align: right;
+        }
+
+        .btn1 {
+            /* text-align: center; */
+            margin: 40px auto;
+            /* border: 1px solid ; */
+        }
+
+        button {
+            margin: auto;
+            display: block;
+            width: 100%;
+            background: linear-gradient(to left, purple, blue);
+            padding: 15px;
+            color: white;
+            border-radius: 50px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid green;
+            padding: 20px 0px;
+            margin: 10px 0px;
+            width: 100%;
+        }
+        .xyz1{
+            text-align: center;
+
+        }
+        .icons{
+            text-align: center;
+        }
+        .icons i
+        {
+            padding: 10px;
+            border-radius:50%;
+        }
+        .fa-twitter
+        {
+            background: lightblue;
+
+        }
+        .fa-google
+        {
+            background:orangered;
+        }
+        .fa-facebook-f
+        {
+            background: blue;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>login</h1>
+        <div>
+            <label for="">username</label>
+            <input type="text" placeholder="type your username">
+        </div>
+        <div>
+            <label for="">password</label>
+            <input type="text" placeholder="type your password">
+        </div>
+        <p class="xyz">forgot password</p>
+        <div class="btn1">
+            <button>login</button>
+        </div>
+        <p class="xyz1">or sign up using</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i> 
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+        </div>
+    </div> 
+</body>
+
+</html>
