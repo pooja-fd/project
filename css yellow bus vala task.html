@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* background-color: lightcyan; */
+            background-image: url(https://i.pinimg.com/736x/0d/46/c3/0d46c31e1ac356453c50ae0add82427e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            /* background-color: yellow; */
+            padding: 22px 20px;
+            display: flex;
+            gap: 1px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card{
+           /* background-color:blueviolet; */
+           
+        }
+       img{
+        /* padding: 6px; */
+        height: 355px;
+
+       }
+        .cardright {
+            height: 358px;
+            width: 350px;
+            background-color:grey;
+            text-align: center;
+        }
+
+      .info .input,
+        button {
+            width: 300px;
+            padding: 8px 10px;
+            margin: 6px;
+            border-radius: 4px;
+            border: none;
+        }
+         button {
+            color: white;
+            background-color: green;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://images.wallpaperscraft.com/image/single/bus_toy_sand_145852_225x300.jpg" alt=""
+                    height="">
+            </div>
+        </div>
+        <div class="cardright">
+            <h1>contact us</h1>
+            <div class="info">
+                <input type="text" class="input" placeholder="your Name">
+            </div>
+            <div class="info">
+                <input type="text" class="input" placeholder="your E-mail">
+            </div>
+            <div class="info">
+                <input type="text" class="input" placeholder="phone">
+            </div>
+            <div class="info">
+                <textarea name="" rows="6" id="" class="input">Message</textarea>
+            </div>
+            <div>
+                <button>send</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
