@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        box-sizing: border-box;
+    }
+.xyz{
+    height: 150px;
+    width: 150px;
+    /* background: pink; */
+    margin: 200px auto;
+    padding: 25px;
+    border: 8px solid transparent;
+    border-top: 12px solid lightcoral;
+    /* border-bottom: 15px solid green; */
+    animation: gumo 1s 3;
+    border-radius: 50%;
+}
+.abc{
+    height: 100px;
+    width: 100px;
+    /* background: lightseagreen; */
+    padding: 15px;
+    border: 8px solid transparent;
+    border-top: 12px solid darkorchid;
+    border-radius: 50%;
+    animation: pooja 3s 3 linear;
+    
+   
+}
+.pqr{
+    height: 50px;
+    width: 50px;
+    /* background-color:rebeccapurple ; */
+    border: 8px solid transparent;
+    border-top: 12px solid yellow;
+    border-radius: 50%;
+    animation: gumo 4s 2 infinite;
+
+}
+
+
+    
+ 
+ @keyframes gumo
+
+{  0%{ transform: rotate(0deg);}
+      100%{transform: rotate(360deg);}
+    
+ }
+ @keyframes pooja{
+    0%{ transform:rotate(0deg);}
+    100%{transform:rotate(-360deg) ;}
+    
+ }
+ 
+    </style>
+</head>
+<body>
+    <div class="xyz">
+        <div class="abc">%
+            <div class="pqr"></div>
+        </div>
+    </div>
+</body>
+</html>
