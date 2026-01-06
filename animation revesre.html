@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz {
+            height: 100px;
+            width: 100px;
+            background: green;
+            animation: animate 2s 4 linear;
+             /* infinite alternate-reverse; */
+        }
+
+        /* @keyframes animate {
+            from {
+                background: green;
+                transform: translate(0px, 0px);
+            }
+
+            to {
+                background-color: red;
+                transform: translate(100px, 0px);
+            }
+        } */
+        
+        @keyframes animate {
+            0% {
+                background: green;
+                transform: translate(0px, 0px);
+            }
+/* 
+            100%{
+                background-color: red;
+                transform: translate(100px, 0px);
+            } */
+            20%{
+                background-color: yellowgreen;
+                transform: translate(20px, 0px);
+            }
+            40%{  background-color:blue;
+                transform: translate(40px ,0px);   
+
+            }
+            60%{  background-color:blue;
+                transform: translate(60px, 0px) rotate(360deg) ;  
+            }
+            80%{
+                background-color: orangered;
+                transform: translate(80px, 0px);
+            }
+            100%{
+                background-color:pink;
+                transform:translate(100px ,0px) ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xyz"></div>
+    <div class="abc"></div>
+    
+
+
+</body>
+
+</html>
