@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .ball,
+        .line {
+            border-radius: 50%;
+            background: linear-gradient(lightblue, lightcoral);
+            box-shadow: 0 0 20px #000 inset;
+        }
+
+        .ball {
+            height: 200px;
+            width: 200px;
+            /* background: linear-gradient(lightblue, coral); */
+            margin: 100px auto;
+            padding: 100px 0 0 80px;
+            overflow: hidden;
+            box-shadow: 3px 3px 8px black -3px -3px 10px #000;
+
+        }
+
+        .line {
+            height: 200px;
+            width: 200px;
+            /* background: linear-gradient(lightcoral,lightblue); */
+            border: 30px groove grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball">
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>
