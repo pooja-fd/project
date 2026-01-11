@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background: grey;
+        }
+
+        ul {
+            background: darkcyan;
+        }
+
+        li {
+            background: darkgoldenrod;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+       li .line {
+            height: 5px;
+            width: 10px;
+            background: blue;
+            transition: 1s;
+        }
+
+        /* .line:hover {
+            width: 100px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        } */
+
+        li:hover .line {
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <DIV class="navbar">
+        <ul>
+            <li>
+                <a href="">home</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">about</a>
+            </li>
+            <li>
+                <a href="">service</a>
+            </li>
+            <li>
+                <a href="">contact</a>
+            </li>
+            
+
+        </ul>
+    </DIV>
+</body>
+
+</html>
