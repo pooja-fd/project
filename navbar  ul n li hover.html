@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            background: grey;
+        }
+
+        ul {
+            background: lightcoral;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        li {
+            background: lightpink;
+            border: 3px solid black;
+            display: inline;
+            padding: 5px 9px;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            color: blue;
+            margin-right: 20px;
+            padding: 6px 8px;
+        }
+
+        .line {
+            height: 5px;
+            width: 10%;
+            background: red;
+            position: absolute;
+            /* top: 0px; */
+            bottom: 0;
+            top: 100%;
+            left: 0;
+            transition: 1s;
+        }
+
+        li:hover .line {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="">home</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">about</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">service</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="">contact</a>
+                <div class="line"></div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
