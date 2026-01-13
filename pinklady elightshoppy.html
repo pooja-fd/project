@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* border: 4px solid red; */
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col1 img,
+        .col2 img {
+            width: 500px;
+            height: 300px;
+
+        }
+
+        .main {
+            position: relative;
+            height: 300px;
+            width: 520px;
+            /* border: 10px solid greenyellow; */
+            /* margin: 100px auto; */
+
+            transition: .5s;
+          
+        }
+
+        .ek,
+        .do {
+            height: inherit;
+            width: inherit;
+            /* border: 4px solid purple; */
+            position: absolute;
+            top: 310px;
+            left: -630px;
+            background: rgba(225, 0, 0, 0.2);
+            transition: .5s;
+            opacity: 0;
+        }
+
+        .do {
+            position: absolute;
+            top: -320px;
+            left: 550px
+        }
+
+        .main:hover .ek,
+        .main:hover .do {
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+        }
+
+        .main1 {
+            position: relative;
+            height: 300px;
+            width: 500px;
+            /* border: 10px solid greenyellow; */
+            /* margin: 100px auto; */
+
+            transition: .5s;
+        }
+
+        .ek1,
+        .do1 {
+
+            height: inherit;
+            width: inherit;
+            /* border: 4px solid purple; */
+            position: absolute;
+            top: 310px;
+            left: -550px;
+            background: rgba(0, 240, 0, 0.3);
+            transition: .5s;
+            /* opacity: 0; */
+            opacity: 0;
+        }
+
+        .do1 {
+            position: absolute;
+            top: -300px;
+            left: 500px;
+        }
+
+        .main1:hover .ek1,
+        .main1:hover .do1 {
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+        h1{
+            position: absolute;
+            color: white;
+            top: 90px;
+            left: 120px;
+            letter-spacing: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <div class="main">
+                    <h1>Flat 50% off</h1>
+                    <img src="https://aykhanhuseyn.github.io/eliteshoppy.github.io/img/bb1.jpg" alt="">
+                    <div class="ek"></div>
+                    <div class="do"></div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="main1">
+                    <h1>Flat 50% off</h1>
+                    <img src="https://aykhanhuseyn.github.io/eliteshoppy.github.io/img/bot_2.jpg" alt="">
+                    <div class="ek1"></div>
+                    <div class="do1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
