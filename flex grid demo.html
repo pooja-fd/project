@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flexrow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-aroundj;
+            background: pink;
+            gap: 20px;
+        }
+
+        .flexcol {
+            border: 2px solid;
+            width: 280px;
+        }
+
+        .gridrow {
+            background: lightblue;
+            display: grid;
+            /* grid-template-columns: repeat(4 , 280px); */
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+            gap: 9px;
+        }
+
+        .gridcol {
+            border: 2px solid;
+        }
+
+        .fg,
+        .bg {
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+        }
+
+        .bg {
+            background: url(https://th.bing.com/th/id/OIP.ae8FsepFg2p0AjHI7pGDwgHaGb?rs=1&pid=ImgDetMain);
+            text-align: center;
+            /* line-height: 200px; */
+            padding: 30px, 0, 0, 30px;
+        }
+
+        .fg {
+            position: relative;
+
+        }
+
+        span {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: inherit;
+            width: inherit;
+            /* /* background: linear-gradient(pink, yellow); */
+            background: linear-gradient(rgba(0, 0, 0, .4), lightblue);
+            opacity: 1;
+            transform: translate(200px, 0px) scale(0) rotate(0deg);
+            transition: 1s;
+        }
+
+        .fg:hover span {
+            opacity: 1;
+            transform: translate(0px, 0px)scale(1) rotate(360deg);
+        }
+
+        .fg1,
+        .bg1 {
+            height: 180px;
+            width: 180px;
+            border: 1px solid;
+            margin: 20px auto;
+        }
+
+        .bg1 {
+            /* background: coral; */
+            background-image: url(https://th.bing.com/th/id/OIP.ae8FsepFg2p0AjHI7pGDwgHaGb?rs=1&pid=ImgDetMain);
+            /* padding: 9px, 0 , 0, 60px; */
+            /* text-align: center; */
+            /* line-height: 160px; */
+            background-size: cover;
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+            /* background-size: 100% 100%; */
+            background-position: center;
+
+        }
+
+        b {
+            background: grey;
+            font-style: italic;
+        }
+
+        img {
+            /* object-fit: contain; */
+            object-fit: cover;
+            object-position: center;
+            width: 200px;
+        }
+        i{
+            background: red;
+        }
+        .fg1parent{
+            position: relative;
+        }
+        .child{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Flex</h1>
+    <div class="container">
+        <div class="flexrow">
+            <div class="flexcol">col1</div>
+            <div class="flexcol">col1</div>
+            <div class="flexcol">col1</div>
+            <div class="flexcol">col1</div>
+        </div>
+    </div>
+
+
+    <h2>grid</h2>
+
+    <div class="gridcontainer">
+        <div class="gridrow">
+            <div class="gridcol">grid col1</div>
+            <div class="gridcol"> grid col2</div>
+            <div class="gridcol">grid col3</div>
+            <div class="gridcol"> grid col4</div>
+        </div>
+    </div>
+
+
+    <div class="bg">
+        hello
+    </div>
+    <div class="fg">
+        <span>hello</span>
+        <img src="https://th.bing.com/th/id/OIP.ae8FsepFg2p0AjHI7pGDwgHaGb?rs=1&pid=ImgDetMain" alt="" width="100%"
+            height="100%">
+    </div>
+
+
+
+
+    <div class="fg1parent">
+    <i class="child">hello</i>
+
+        <img src="https://th.bing.com/th/id/OIP.ae8FsepFg2p0AjHI7pGDwgHaGb?rs=1&pid=ImgDetMain" alt="" width="100%"
+            height="100%">
+    </div>
+
+    <div class="bg1">
+        <b>Background Img Hello jjjj</b>
+    </div>
+</body>
+
+</html>
