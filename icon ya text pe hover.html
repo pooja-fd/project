@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        box-sizing: border-box;
+    }
+        .main{
+            height: 100px;
+            width: 100px;
+            background:lightblue;
+            /* margin: 20px auto; */
+            position: relative;
+        }
+        .effect{
+            height: inherit;
+            width: inherit;
+            background: darkgoldenrod;
+            transform: scale(0);
+            transition: .5s;
+
+        }
+        .main:hover .effect{
+            transform: scale(1);
+
+        }
+        b{  color: lightcoral;
+            font-size: 25px;
+            position: absolute;
+            top: 35px;
+            left: 40px;
+            /* transform: translate(25px ,10px) ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="effect"></div>
+        <b>hi</b>
+    </div>
+</body>
+</html>
