@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     a{
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 0.5s;
+        }
+        .front , .back{
+            height: inherit;
+            width: inherit;
+            position: absolute;
+        }
+        .front{
+            background-color: green;
+            transform: rotateY(30deg) translateZ(90px);
+        }
+        .back{
+            background-color: lightcoral;
+            transform: translateZ(40px);
+        }
+        a:hover{
+            transform: rotateY(-50deg);
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        <div class="front">front</div>
+        <div class="back">back</div>
+</head>
+<body>
+    
+</body>
+</html>
