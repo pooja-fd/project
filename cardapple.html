@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            /* width: 600px; */
+            background: #ffff;
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+           display: flex;
+           /* justify-content: left; */
+        }
+
+        .innerdiv {
+            padding: 20px;
+            border: 3px solid;
+            width: 300px;
+            background-color: lightblue;
+        }
+
+        img {
+            border-radius: 15px;
+            background: lightpink;
+
+        }
+
+        button {
+            margin-bottom: 20px;
+            margin-left: 30px;
+            background: orangered;
+            padding: 4px;
+        }
+        .rightsideapple{
+            /* background: grey; */
+            position: relative;
+            top: 30px;
+            left: -90px;
+            padding: 20px;
+            text-align: center;
+        }
+        .icon{
+            /* display: flex; */
+            justify-content: space-between;
+        }
+        
+
+        .rightsideapple img{
+            position: absolute;
+            left:-510px;
+        }
+        .fa-share-nodes{
+            position: absolute;
+            top: 40px;
+            left: -490px;
+            z-index: 2;
+        }
+        .fa-heart{
+            position: absolute;
+            top: 40px;
+            left: -260px;
+            z-index: 2;
+        }
+        h1 , p{
+            text-align: right;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="innerdiv">
+            <h1>Delicious Apple</h1>
+            <p>cod 4599</p>
+            <p>Rs <span>7.93</span></p>
+            <h2>Select Color</h2>
+            <img src="apple-food-fruit-39803.jpg" alt="" height="40px">
+            <img src="apple-food-fruit-39803.jpg" alt="" height="40px">
+            <img src="apple-food-fruit-39803.jpg" alt="" height="40px">
+
+            <div class="info">
+                <h3>Benifits</h3>
+                <ul>
+                    <li>Apple are nutrious</li>
+                    <li>Apple may be good for weight loss</li>
+                    <li>Apple may be good for bone health</li>
+                </ul>
+            </div>
+            <button>add to cart</button>
+        </div>
+        <div class="rightsideapple">
+            <!-- <div class="icon"> -->
+                <i class="fa fa-share-nodes"></i>
+                <i class="fa-regular fa-heart"></i>
+            <!-- </div> -->
+                <img src="https://tse4.mm.bing.net/th?id=OIP.HC991E8MaPlWflZmT5fTwQHaGu&rs=1&pid=ImgDetMain" alt=""
+                    height="250px" width="">
+        </div>
+    </div>
+</body>
+
+</html>
