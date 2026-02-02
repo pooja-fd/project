@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            background:linear-gradient(red,blue);
+            color:transparent;
+
+            background-clip: text;
+        }
+
+        h2 
+        {
+            background: url('https://cdn.motor1.com/images/mgl/MkO9NN/s1/future-supercars.jpg');
+            font-size: 100px;
+
+            background-size: cover;
+
+            color: transparent;
+
+            background-clip: text;
+            background-attachment: fixed;
+
+           -webkit-text-stroke-color: #000;
+           -webkit-text-stroke-width: 2px;
+
+
+        }
+
+        .p1,.p2
+        {
+            border: 50px solid;
+            padding: 20px;
+        }
+
+        .p1 
+        {
+            border-image: linear-gradient(45deg,red,blue,green,white,black,purple);
+
+            border-image-slice: 45;
+        }
+
+        .p2 
+        {
+            border-image:url(border-image.png) 50% round;
+            /* border-image-slice: 40%; */
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello</h1>
+
+    <h2>Hello</h2>
+
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, accusantium ab ad quod nihil rerum alias laboriosam natus possimus dignissimos nemo. Non, aperiam! Consequatur, asperiores natus repudiandae aliquid cum architecto?
+    </p>
+
+    <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, accusantium ab ad quod nihil rerum alias laboriosam natus possimus dignissimos nemo. Non, aperiam! Consequatur, asperiores natus repudiandae aliquid cum architecto?
+    </p>
+    
+</body>
+</html>
