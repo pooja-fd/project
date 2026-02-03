@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 
+        margin : it can move freely in the whole body but it affects the surrouding elements
+
+        tranform =>it can move/rotate/scale/skew freely in the whole body but it does not affect the surrouding elements */
+        .x,.y 
+        {
+            height: 100px;
+            width: 100px;
+            border:5px solid
+        }
+        .x 
+        {
+            /* margin-left:100px; */
+            /* margin-top: 100px; */
+            /* transform: translate(x,y); */
+            /* transform: translate(100px,0); */
+            transform: translate(10px,-50px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="x">DIV X</div>
+    <div class="y">DIV Y</div>
+    
+</body>
+</html>
