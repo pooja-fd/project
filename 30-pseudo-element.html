@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line
+        {
+            background: lightblue;
+        }
+        h1::first-letter 
+        {
+            color:coral
+        }
+
+        h2::before 
+        {
+            content: "PataNahi ";
+        }
+        h2::after 
+        {
+            content: " Pichhe";
+        }
+
+        h3::after 
+        {
+            content: url(https://cdn-icons-png.flaticon.com/512/919/919826.png);
+        }
+
+        h3::before 
+        {
+            content:"\26C4"
+        }
+
+        input::placeholder 
+        {
+            color:rebeccapurple;
+            padding-left: 20px;
+        }
+
+       ::selection 
+        {
+            background: #000;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at, odio totam pariatur porro iusto consectetur necessitatibus! Tenetur doloremque at consequatur expedita quibusdam facilis! Sequi beatae quam et distinctio dicta.
+    </p>
+
+    <input type="text" placeholder="Enter name...">
+
+    <h2>ChanduBhai</h2>
+    <h3>
+        hello H3
+    </h3>
+
+    <div>
+        <h1>HEllo</h1>
+        <h1>HEllo</h1>
+        <h1>HEllo</h1>
+        <h1>HEllo</h1>
+        <h1>HEllo</h1>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eius temporibus molestias, aliquid inventore expedita autem deleniti natus quae. Repellat consectetur rerum provident rem dolorem asperiores sed beatae odio quo.
+    </p>
+    
+</body>
+</html>
