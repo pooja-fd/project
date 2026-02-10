@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .foreGround,.backGround
+        {
+            height: 200px;
+            width: 200px;
+            border: 10px solid;
+            margin: 50px auto;
+        }
+        .backGround 
+        {
+            background: url(https://free-3dtextureshd.com/wp-content/uploads/2024/03/48.jpg.webp);
+            background-size: 100% 100%;
+        }
+
+        .foreGround span,.backGround span
+        {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        }
+
+        .foreGround 
+        {
+            position: relative;
+        }
+
+        .foreGround span 
+        {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+          
+        }
+        .backGround span 
+        {
+            /* padding: 100px 0 0 50px;
+            display: block; */
+            /* background: #fff; */
+            /* height: 100px;
+            width: 200px;
+            margin-top: 20px; */
+            display: block;
+            text-align: center;
+            line-height: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h2>foreGround : img src</h2>
+
+    <div class="foreGround">
+        <span>HELLO</span>
+        <img src="https://free-3dtextureshd.com/wp-content/uploads/2024/03/48.jpg.webp" alt="" height="100%" width="100%">
+    </div>
+
+    <h2>backGround : css background</h2>
+    
+    <div class="backGround">
+        <span>HELLO</span>
+    </div>
+    
+</body>
+</html>
