@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container,.grid-container 
+        {
+            border: 3px solid;
+        }
+        .flex-row,.grid-row 
+        {
+            border: 3px solid blue;
+        }
+        .flex-col,.grid-col 
+        {
+            border: 3px solid orange;
+        }
+
+        .flex-row 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .flex-col 
+        {
+            width: 200px;
+        }
+        .flex-col img,.grid-col img 
+        {
+            width: 100%;
+        }
+
+        .grid-row 
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,200px);
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-row">
+            <div class="flex-col">
+                <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            </div>
+            <div class="flex-col">
+                <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            </div>
+            <div class="flex-col">
+                <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-col">
+                 <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            </div>
+            <div class="grid-col">
+                 <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            </div>
+            <div class="grid-col">
+                 <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
