@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div
+        {
+            border: 4px solid red;
+        }
+        h1 
+        {
+            color:black;
+            color:red;
+            color:initial;
+            border:inherit;
+        }
+        .static 
+        {
+            background: lightcoral;
+            font-size: 45px;
+            position: static;
+            top:100px;
+        }
+
+        .sticky 
+        {
+            background: green;
+            font-size: 45px;
+            position: sticky;
+            top:0px;
+            bottom: 0px;
+        }
+
+
+        .fixed 
+        {
+            background: blue;
+            font-size: 45px;
+            position: fixed;
+            top:100px;
+            left:300px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CSS positions: to move an element without affecting surrounding element within a parent
+
+    Ways: 
+    1. Static 
+    2. Fixed 
+    3. Sticky 
+    4. Absolute (child)
+    5. Relative (Parent)
+    6. Inherit (to access parent properties)
+    7. initial(original default value) 
+    
+    except static value of position
+
+    four values will be activated to move elements based on parent element 
+    top : 0
+    right :0
+    bottom :0
+    left:0
+    -->
+
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    
+
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+
+    <div class="static">
+        THIS IS STATIC
+    </div>
+
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+
+    <div class="sticky">
+        THIS IS STICKY
+    </div>
+
+
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+
+    <div class="fixed">
+        THIS IS FIXED
+    </div>
+
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, debitis! Sunt ipsa, aut asperiores placeat reiciendis dolorem porro expedita maxime laborum molestias odio ex quas! Illo corporis natus accusamus ducimus.</h1>
+    </div>
+    
+
+</body>
+</html>
