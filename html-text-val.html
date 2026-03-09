@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <!-- <h1></h1>
+    <p></p>
+    <div></div>
+    <a href=""></a>
+    <img src="" alt="">
+    <input type="text"> -->
+
+
+      <h1>this is h1 tag</h1>
+    <p> this is para </p>
+    <div> this is devision tag</div>
+    <a href="">anchor tag hyper link</a>
+    <img src= " https://th.bing.com/th/id/OIP.j4KdqaXpnhbN94WzVyHUhAHaE8?w=287&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" height="100">
+    <input type="text"><br>
+
+
+    <script>
+
+        $(document).scroll('practice')
+
+           $(document).load('practice')
+
+        function practice()
+        {
+         // $('h1').html()
+        console.log ($('h1').html())
+        document.write( $('h1').html())
+        // alert( $('h1').html())
+
+        $('input').val('123')
+    }
+
+
+
+        // $('input').focus(get)
+        // $('input').blur(get)
+        // $('input').keypress(get)
+
+        function get() {
+
+            $('h1').html('this is innerHtml <b>pooja</b>')
+
+            $('p').text('this is paragraphg <b>123</b>')
+
+            $('div').text('this is paragraphg <b>123</b>')
+
+            $('a').text('this is paragraphg <b>123</b>')
+
+            // $('img').attr("src", ' https://th.bing.com/th/id/OIP.j4KdqaXpnhbN94WzVyHUhAHaE8?w=287&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3')
+            // $('img').css('height', 200)
+
+            $('input').val('123456')
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
