@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js" type="text/javascript"></script>
     <style>
-        .box{
-            height: 900px;
-            width: 900px;
-            box-shadow: 5px 5px 0px black;
-            text-align: center;
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
         }
-        .a{
-            display: grid;
-            grid-template-columns: repeat(auto-fit,200px);
-            /* border: 2px solid red; */
-            background-color: aqua;
-            display:inline-block;
-            font-size: 20px;
-            height: 120px;
-            width: 320px;
+        .borderclass{
+            
         }
-            /* .a1{
-                height: 50px;
-                width: 50px;
-                background-color: pink;
-                padding: 10px;
-            } */
     </style>
 </head>
+
 <body>
-    <div class="box">
-        <h1>css grid</h1>
-        <div class="a">hello  
-            <div class="a1"></div>
-        </div>
-    </div>
+    <div class="box"></div>
+    <button class="down">slide down</button>
+    <button class="up">slide up</button>
+    <button class="togle">slidetoggle</button>
+    <script>
+        $('.down').click(() => {
+            $('.box').slideDown()
+        })
+
+         $('.up').click(() => {
+            $('.box').slideUp()
+        })
+         $('.togle').click(() => {
+            $('.box').slideToggle()
+        })
+
+
+    
+
+    
+
+            $(".box").click(function () {
+                $(".box").css("border","3px solid red");
+            
+            });
+
+
+    </script>
 </body>
+
 </html>
