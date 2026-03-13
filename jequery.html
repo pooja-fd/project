@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <p class="p2" id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum cumque obcaecati praesentium, ullam quasi perferendis, tempora facere nisi voluptate tenetur qui  accusantium?</p>
+    <button id="btn1">Hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">hideshow</button>
+     <script>
+        // document.querySelector('p')
+        // document.querySelector('#p1')
+        // document.querySelector('.p2')
+        // document.getElementById('p1')
+        
+
+        // document.getElementById('btn1'). addEventListener('click',hideshowpara)
+        $('#btn1').click(hide);
+        $('#btn2').dblclick(show)
+        $('#btn3').mouseenter(hideshowpara)
+
+        // $(document).click(()=>
+        // {
+        //    $('p').hide();
+        // })
+
+
+        // function hide()
+        // {
+        //      $('p').hide(function(){
+        //         alert('hidden')
+        //      });
+        // }
+
+        function hide(){
+            $('p').hide(1800)
+        }
+
+        function  show()
+        {
+              $("#p1").show();
+        }
+    
+        function hideshowpara()
+        {
+            $('.p2').toggle();
+
+        }
+        
+
+
+
+
+
+     </script>
+</body>
+</html>
