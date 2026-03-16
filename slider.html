@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+
+<body>
+    <h1>what is Netflixs</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sed facilis. Exercitationem illum, itaque sint
+        modi reprehenderit fugiat nam suscipit ratione repellendus accusantium. Perferendis unde officia voluptatem id
+        repellat amet!</p>
+    <button class="btn">slide up </button>
+    <button class="btn1">slideDown</button>
+    <button class="btn2">slideToggle</button>
+    <button class="btn3">stop</button>
+
+    <script>
+        $('.btn').click(function(){
+            $("h1").slideUp(1000)
+            $('p').slideUp(1000)
+        })
+        $('.btn1').click(function(){
+            $('h1').slideDown(5000)
+            $('p').slideDown(5000)
+        })
+        $(".btn2").click(function(){
+            $('h1').slideToggle(1000)
+        })
+        $('.btn3').click(()=>{
+            $('h1').stop(1500)
+            $('p').stop(1500)
+        })
+    </script>
+</body>
+
+</html>
