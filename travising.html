@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<div class="main">
+    <div class="h1"></div>
+    <ul>
+        <li>heloo</li>
+        <li>html</li>
+        <li>css</li>
+    </ul>
+</div>
+<script>
+    // $(".h1").parent() .css('border', "2px solid red")
+    // $('ul').parent() .css ('background-color' , ' green')
+    // $('.main').parent() .css ('border' , '10px groove blue')
+
+ $(".h1").parents() .css('border', "2px solid red")
+    $('ul').parents() .css ('background-color' , ' green')
+    $('.main').parents() .css ('border' , '10px groove blue')
+</script>
+</body>
+</html>
