@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        div {
+            background-color: pink;
+            height: 200px;
+        }
+
+        p {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut aperiam laborum impedit mollitia qui,
+            minus error ea libero dicta corrupti accusantium quas fugit asperiores odio. Omnis, non culpa! Corporis.</p>
+    </div>
+    <li> list </li>
+    <script>
+        // $('div').empty();
+        // $('p').remove()
+        // $('div').remove();
+        //   document.querySelector('li').prepend('hello') replace to dollor sign
+        $('li').append('<b>hello this append method </b>')
+        $('li').prepend('this prepend')
+
+        $('li').after('hello jquery it is after ')
+
+        $('li').before('hello123 it is before')
+      h1tag=  $('<h1>this is create  tag </h1>')
+    //   $('li').css('color' , 'red') 
+      $('li').append (h1tag)
+
+
+    </script>
+</body>
+
+</html>
