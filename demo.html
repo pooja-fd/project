@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="i1" >
+    <input type="text" name="" id="i2" >
+    <!-- <button id="i3" onclick="test()">click</button> -->
+
+    <button onclick="test1()" >event</button>
+
+
+    <script>
+        let inp1 = document. getElementById('i1')
+        let inp2 = document.getElementById('i2') 
+        let btn = document .getElementById('i3')
+        let btn1 = document.querySelector('button')
+
+        // // inp1 = 'js language'
+        //  function test ()
+        //  {
+        //     inp2.value = inp1.value
+        //  }
+                // exmple 2 if else thi kru che
+
+         function test1()
+         {
+                if(inp1.value === 'A')
+                {
+                    inp2.value = "POOJA"
+                }
+                else if ( inp1.value == '1')
+                {
+                    inp2.value = 'java script'
+                }
+                else {
+                    inp2.value = 'samya'
+                }
+         }
+    </script>
+</body>
+</html>
