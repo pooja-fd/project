@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 20px;
+            background-color: lightblue;
+        }
+        .row{
+            display: flex;
+            background-color: lightgray;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+        .col{
+            background-color: aqua;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col">
+                <img src="https://www.havmor.com/sites/default/files/styles/380x273/public/products/Strawberry%20Stunner.jpg?itok=NJHwJOUq" width="100%" alt="">
+                <div class="pred-info">
+                    <p>ice-cream is good for health n its very deliciouss dish </p>
+                    <p>ice is cool n chill like ice</p>
+                </div>
+            </div> -->
+            
+        
+        </div>
+    </div>
+    <script>
+        let r = document.querySelector('.row')
+        // r.innerHTML = ' <div class="col">colpooja</div>'
+    
+
+        x =""
+
+        for(i=1; i<=14;i++)
+         {
+                // x    =  x + 123 //123
+                                // 123123  
+                                // 123123123
+                            // 4time ave ne 4 var lakhva mte loop ni bhr j lakhvu pde r.innerhtml ma 
+                  x = x +' <div class="col"><img src="https://www.havmor.com/sites/default/files/styles/380x273/public/products/Strawberry%20Stunner.jpg?itok=NJHwJOUq" width="100%" alt=""> <div class="pred-info"> <p>ice-cream is good for health n its very deliciouss dish </p>  <p>ice is cool n chill like ice</p></div></div>'     
+        }
+            r.innerHTML = x
+    </script>
+</body>
+</html>
