@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <label for="usdInput">Enter USDdollor:</label>
+    <input type="number" id="usd" onblur="convertCurrency()">
+    <!-- input type ma ="txet" bi lakhy bt  number validation ma prbm AVE N JYRE ABCD lkhto NA AVE poutput "nan aijy" MTE  number lkhvu -->
+    <p>Converted INR: <input id="inrOutput"></p>
+
+    <script>
+        function convertCurrency() {
+            let usdValue = document.getElementById("usd").value;
+            let inrValue = usdValue * 84;
+            document.getElementById("inrOutput").value = inrValue;
+            // .value ni jgye .textcontent bi lakhy upr je input litho eni jgye spAN BI levay .
+            // .toFixed(3);
+        }
+    </script>
+</body>
+</html>
