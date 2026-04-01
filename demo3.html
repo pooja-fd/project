@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="i1" onkeyup="test()">
+    <textarea name="" id="i2"></textarea>
+    <button id="i3" onclick="test()">click</button>
+
+    <script>
+        let inp = document.getElementById('i1')
+        let text = document.getElementById('i2')
+        let btn = document.getElementById('i3')
+        let btn1 = document.getElementById('i4')
+
+        function test (){
+            // text.innerHTML = inp.value
+            inp.value = text.innerHTML
+            // text. style. visibility = 'hidden'
+            // inp.style.background = "lightblue"
+            // inp .style.padding = '50px'
+            // text.style.transform = translate('40px  20px')
+            text. style. border = '2px solid blue'
+        }
+  </script>
+</body>
+
+</html>
