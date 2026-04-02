@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="i1">
+    <input type="text" id="i2">
+    <button id="myButton">click</button>
+    <script>
+        let inp = document.getElementById('i1')
+        let button = document.getElementById("myButton");
+        // button.addEventListener("click", function () {
+            // alert("Clicked!");
+        // });
+        button.addEventListener("mousenter", function () {
+            console.log("Mouse over hua!");
+        });
+
+           let inp1  = document.getElementById ('i2')
+            button .addEventListener ('mouseenter' ,  () =>
+        
+        { 
+         inp1.type = "Date"
+         button.innerHTML = event.type
+         
+        })
+        window.addEventListener ('dblclick', function test() {
+
+            inp.type = "date"
+            button.innerHTML = event.type
+        }
+    )
+    </script>
+</body>
+
+</html>
