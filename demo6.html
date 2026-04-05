@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input  id="input" type="text">
+    <input type="text" id="input1">
+    <button id="btn"onclick="get()" ondblclick="test()" >click</button>
+    <script>
+        let marks = 55
+
+        if (!marks >= 85) {
+            document.write('good score in exm')
+        }
+        else if (marks >= 50) {
+            document.write('marks score is not good in english')
+        }
+        else if (marks >= 35) {
+            document.write('passing marks')
+        }
+        else {
+            document.write('fail in two subject')
+        }
+
+
+        let markss = 75;
+
+        if (markss >= 90) {
+            console.log("Grade: A+");
+        } else if (markss >= 80) {
+            console.log("Grade: A");
+        } else if (markss >= 70) {
+            console.log("Grade: B");
+        } else if (markss >= 60) {
+            console.log("Grade: C");
+        } else {
+            console.log("Grade: F (Fail)");
+        }
+
+        let list
+
+
+        const input = document.getElementById("input")
+        const btn = document.getElementById("btn")
+           const input1 = document.getElementById("input1")
+ 
+        // btn.addEventListener("click" , ()=>{
+        //             const pooja = input.value;
+        //             input1.value = pooja
+
+        //     document.write(`Your marks = ${pooja}`)
+        //       })
+
+            //   second mthod 
+                // function get(){
+                //     input1.value = input.value
+                // }
+
+                function test()
+                {
+                 const pooja = input.value
+                input1.value = pooja
+
+                document.write('your marks = pooja')
+                        // console.log('input1')
+                }
+               
+    </script>
+</body>
+
+</html>
