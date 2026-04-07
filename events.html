@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p">
+        Lorem ipsum dolor sit ame. Libero accusantium enim iste rem voluptatem, pariatur error
+        aliquam inven Quidem mollitia maiores ipsum illum.</P>
+    <input type="" id="i1">
+
+    <button onclick="test()" id="btn1">hide</button>
+    <button id="btn2" onclick="test1()">show</button>
+    <button id="btn3" onclick="get()">hide</button>
+     <script>
+        let para = document.querySelector('p')
+        //  console.log(para)
+
+        let btn = document.getElementById('btn1')
+        // console.log(btn)
+         let btn11 = document.getElementById('btn2')
+         let btn12 = document.getElementById('btn3')
+
+    function test() {
+        // para.style.display = "None"
+        para.style.visibility = "hidden"
+
+    }
+    function test1() {
+        para.style.visibility = "visible"
+        // para.style.display = "block"
+
+
+    }
+    function get() {
+        if (para.style.display == "block") 
+        {
+        
+            para.style.display = "none"
+            btn12.innerHTML = "hide"
+        }
+
+          else{
+                para.style.display = "block"
+                btn12.innerHTML = "showbtn"
+
+            }
+        }
+
+    </script>
+
+    <!-- <script>
+        const para =document.getElementById('p')
+        const btn =document.getElementById('btn1')
+         const btin =document.getElementById('btn2')
+         const button =document.getElementById('btn3')
+
+
+
+        btn.addEventListener('click', () =>{
+                para.style.display = "none";
+        } );
+
+         btin.addEventListener('click', () =>{
+                para.style.display = "block";
+        } );
+        button.addEventListener('click', () =>{
+               
+            if (para.style.visibility = "visible"){
+                btn.click()
+                button.textContent="show"
+            }
+            else {
+                para.style.visibility = "hidden"
+                btn.click()
+                 button.textContent="hide"
+                
+            }
+        } ); -->
+
+    <!-- </script> -->
+</body>
+
+</html>
+<script>
+ 
