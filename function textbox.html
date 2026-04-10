@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyup Event Example</title>
+</head>
+<body>
+
+<input type="text" id="searchBox" placeholder="Type something...">
+<p id="output">good mrng java scrpit </p>
+
+<br><br>
+<button id="btn">click</button>
+<!-- <img src=""  alt="" id="image"> -->
+
+<script>
+    document.getElementById("searchBox").addEventListener("keyup",
+
+     function(event)
+     {
+        document.getElementById("output").textContent = "You typed: " + event.target.value;
+    });
+
+
+
+
+    let isFirstImage = true;
+
+    document.getElementById("btn").addEventListener("click", function() {
+        let imgElement = document.getElementById("image");
+        
+        if (isFirstImage) {
+            imgElement.src = "image2.jpg"; // Second image
+        } else {
+            imgElement.src = "image1.jpg"; // First image
+        }
+        
+        isFirstImage = !isFirstImage; // Toggle flag
+    });
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>
