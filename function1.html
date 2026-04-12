@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="i1" onblur="get()">
+   <input type="text" id="i7" onclick="get1()">
+   <textarea name="" id="i2"></textarea>
+   <br>
+   <br> 
+   <button id="i4" onclick="get1()">hide</button>
+   <button id="i5" onclick ="get2()">show</button>
+   <button id="i6"  onclick="get3()">hide</button>
+
+
+   <script>
+    let inp = document.getElementById('i1')
+    let text1= document.getElementById('i2')
+    let btn = document.getElementById('i4')
+      let btn1 = document.getElementById('i5')
+     let inp1 = document.getElementById('i7')
+     let btn2 = document.getElementById('i6')
+
+    function get()
+    {
+    text1.innerHTML= inp.value
+    }
+    function get1(){
+        text1.style.visibility = "hidden"}
+
+     function get2(){
+        text1.style.visibility = "visible"
+    }
+    function get3(){
+        if(inp1.style.visibility == "hidden")
+        {
+            inp1.style.visibility = "visible"
+            btn2.innerHTML ="poojashow"
+        }
+        else{
+            inp1.style.visibility = "hidden"
+            btn2.innerHTML = 'fenil hide'
+        }
+    }
+   </script>
+</body>
+</html>
