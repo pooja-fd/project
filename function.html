@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="i1"  onblur="test1()"> -->
+      <input type="text" id="i1"  onkeyup="test1()">
+      <textarea name="" id="i2"></textarea>
+    <!-- <button onclick="test1()">click</button> -->
+
+    <script>
+
+        let inp = document.getElementById('i1');
+        let textpooja = document.getElementById('i2');
+        console.log(inp)
+ 
+        function test1(){
+
+           textpooja.value = inp.value;
+        }
+
+    </script>
+</body>
+</html>
