@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    age : <input type="text" id="age" value="36" onblur="test()">
+    atmpin : <input type="text" name="" id="i1">
+
+
+    <script>
+
+        function test() {
+            let verifyage = document.getElementById('age')
+            console.log(verifyage.value)
+            let atm = document.getElementById('i1')
+            age = verifyage.value
+            age = 20;
+            if (age >= 18) {
+                document.write('Eligible for watinig....!' + "<br>")
+            }
+
+            // age = 17 
+            // if(age >=18)
+            // {
+            //     // document.write ( 'eligibile for vote....' +'<br>')
+            // }
+            // else{
+            //     document.write('age is small for vote' + '<br>')
+            // }
+
+            // atmpin = 1234; right value che to,if ma avse,,,ne 134 else part ma avse
+
+            atmpin = 1234
+
+            if (atmpin >= 134) {
+                document.write("Atm pin is right,  welcome to user")
+            }
+
+            else {
+                document.write('pin to proper nakho' + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>
