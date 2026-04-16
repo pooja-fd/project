@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="i1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, fugit magnam iusto tempora totam eaque quibusdam
+        alias quod iste. Culpa nulla illum moles illo nisi vitae ullam!</p>
+    <!-- <input type="text" id="i1"> -->
+    <button id="btn1" onclick="test()">click</button>
+    <button id="btn2" ondblclick="test1()">event</button>
+    <button id="btn3" onclick="test2()">clickevent</button>
+
+    <script>
+        let para = document.getElementById('i1')
+        let btn = document.getElementById('btn1')
+        let btnn = document.getElementById('btn2')
+        let btnnn = document.getElementById('btn3')
+
+        function test()
+        {
+            para.style.visibility = "hidden"
+        }
+        function test1()
+        {
+         para.style.visibility = 'visible'
+             }
+          function test2()
+          {     
+                if(para.style.visibility == 'hidden')
+                {
+                        para.style.visibility = "visible"
+                        btn3.innerHTML = "POOJA"
+                }
+                else{
+                    para.style.visibility = "hidden"
+                    btn3.innerHTML = "fenil"
+                }
+             }
+    </script>
+</body>
+
+</html>
