@@ -1,68 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Loader with Checkmark</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-      background-color: #f0f0f0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
 
-    .loader {
-      border: 8px solid #f3f3f3;
-      border-top: 8px solid #3498db;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1s linear infinite;
-      margin: 0 auto;
-      display: none;
-    }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    #checkmark {
-      font-size: 48px;
-      color: green;
-      display: none;
-    }
-
-    #loadBtn {
-      padding: 10px 20px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-  </style>
+    </style>
 </head>
 <body>
+    <button onclick="showLoader()">Show Loader</button>
+<div id="loader" class="loader" style="display: none;"></div>
 
-  <button id="loadBtn">Start Loading</button>
-  <div class="loader" id="loader"></div>
-  <div id="checkmark">✅</div>
-
-  <script>
-    const loader = document.getElementById("loader");
-    const checkmark = document.getElementById("checkmark");
-    const button = document.getElementById("loadBtn");
-
-    button.addEventListener("click", () => {
-      // Hide checkmark and show loader
-      checkmark.style.display = "none";
-      loader.style.display = "block";
-
-      // Simulate loading time
-      setTimeout(() => {
-        loader.style.display = "none";
-        checkmark.style.display = "block";
-      }, 3000); // 3 seconds loading
-    });
-  </script>
+<script>
+    function showLoader() {
+        document.getElementById("loader").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+        }, 3000); // Loader 3 second sudhi dekhaavse
+    }
+</script>
 
 </body>
 </html>
