@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function count(n) {
+        //     if (n === 1) return 1; // Jab 1 mile, return karo
+
+        //     return n + count(n - 1); // Har step par value return ho rahi hai
+        // }
+
+        // console.log(count(5)); // Output: 15 ✅
+        // document.write(count (5))
+
+        // exmple 2
+        function countdown(n) {
+            if (n === 0)
+             {
+                console.log("Done!");
+                return;  // Base condition (stop recursion)
+            }
+            document.write(n)
+            console.log(n);
+            setTimeout(() => {
+                countdown(n - 1); // Recursion ho raha `setTimeout` ke andar!
+            }, 1000); // Har step pe 1 second ka delay
+
+            setTimeout(countdown(n-1) ,1000)
+        }
+
+        countdown(5);
+
+
+    </script>
+</body>
+
+</html>
