@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function additional(x, y) {
+            setTimeout(additional, 5000);
+            return x + y + "<br>";
+        }
+        // document.write(additional(10 , 12))
+        // setTimeout (additional , 5000)
+        let x = additional("10", "5");
+        document.write(x);
+
+
+        // function set1()
+        // {
+        //     document.write('pooja')
+
+        // }
+        //     setTimeout (set1 , 5000)
+
+        function additional(x, y) {
+            return (Number(x) + Number(y)) + "<br>";
+        }
+
+        let z = additional(10, 5);
+        document.write(z); // Outputs: 15<br>
+
+    </script>
+</body>
+
+</html>
