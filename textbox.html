@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="i1" onblur="test()">
+    <textarea name="" id="i2" onclick="test()"></textarea>
+    <button id="i3" onclick="test()">click</button>
+    <button id="i4">hide</button>
+    <script>
+        let inp = document.getElementById('i1').innerHTML = 'hello'
+        let text = document. getElementById('i2')
+        let btn = document.getElementById('i3')
+        let buttn = document.getElementById('i4')
+
+        function test () 
+        {
+            text.innerHTML = inp.value
+            inp.value = text.innerHTML
+            inp.style.border ='3px solid green'
+        
+        }
+
+
+    // <input type="text" id="i1" onkeyup="get1()">
+    // <textarea name="" id="i2" onblur="get1()"></textarea>
+    // <br>
+    // <button id="i3" onclick="get()">hide</button>
+    // <button id="i4" onclick="get1()">show</button>
+    // <script>
+    //     let inp = document.getElementById('i1')
+    //     let text1 = document.getElementById('i2')
+    //     let btn = document.getElementById('i3')
+
+    //     function get() {
+    //         text1.style.visibility = "hidden"
+    //     }
+    //     function get1() {
+    //         // inp.style.border = '4px dashed red'
+    //         inp.style.visibility = "visible";
+    //         text1.innerHTML = inp.value
+    //         inp.value = text1.innerHTML
+    //     } -->
+    </script>
+</body>
+
+</html>
